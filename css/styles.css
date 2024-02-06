@@ -28,6 +28,15 @@ nav ul li {
     margin-left: 50px; /* Espacio entre elementos li */
 }
 
+nav ul li a {
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    color: inherit; /* Hereda el color del texto de su contenedor */
+}
+
+nav ul li a:hover {
+    color: rgb(32, 162, 95); /* Cambia el color del texto cuando se pasa el cursor sobre el enlace */
+}
+
 
 
 /* Reservas */
