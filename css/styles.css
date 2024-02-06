@@ -5,6 +5,31 @@
 
 /* Index */
 
+header {
+    max-height: 150px;
+    background-color: #c4c1c1; /* Color de fondo opcional */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+  align-self: flex-end;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-right: 60px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin-left: 50px; /* Espacio entre elementos li */
+}
+
+
+
 /* Reservas */
 
 /* Nosotros */
