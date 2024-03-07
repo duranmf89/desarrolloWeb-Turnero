@@ -1,0 +1,22 @@
+{
+  "name": "desarrollowebcoderhouse",
+  "version": "1.0.0",
+  "description": "Curso CoderHouse DW",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/duranmf89/desarrolloWebCoderHouse.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/duranmf89/desarrolloWebCoderHouse/issues"
+  },
+  "homepage": "https://github.com/duranmf89/desarrolloWebCoderHouse#readme",
+  "dependencies": {
+    "bootstrap": "^3.4.1"
+  }
+}
