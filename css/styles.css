@@ -9,17 +9,6 @@ body {
 }
 
 /* Estilos del encabezado */
-/* header {
-    background-color: #1E1E1E;
-    color: white; 
-    padding: 10px 20px; 
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 999;
-    max-height: 170px; 
-} */
 header {
     display: flex; /* Usar flexbox para alinear elementos */
     justify-content: space-between; /* Espacio entre los elementos del encabezado */
@@ -40,13 +29,10 @@ header {
     filter: invert(1); /* Invierte el color del ícono a blanco */
     margin-bottom: 30px;
 }
-
-
 header img {
     max-width: 130px; /* Ajusta el tamaño máximo del logo */
     vertical-align: middle;
 }
-
 nav.otras {
     margin-left: auto; /* Ajusta el margen izquierdo del menú de navegación */
     margin-right: 80px;
@@ -61,31 +47,25 @@ nav ul {
     margin: 0;
     padding: 0;
 }
-
 nav ul li {
     margin-left: 60px;
 }
-
 nav ul li:first-child {
     margin-left: 0; /* Elimina el margen izquierdo del primer elemento */
 }
-
 nav ul li a {
     color: white;
     text-decoration: none;
     transition: color 0.3s ease; /* Agrega una transición suave al color del texto */
 }
-
 nav ul li a:hover {
     color: rgb(32, 162, 95);
 }
-
 .tituloHeader {
     font-size: 30px;
     font-weight: 300;
     margin-left: 100px;
 }
-
 header .material-symbols-outlined {
     font-size: 30px; /* Reduce el tamaño del icono en el encabezado */
     cursor: pointer;
@@ -94,26 +74,21 @@ header .material-symbols-outlined {
     top: 10px; /* Ajusta la posición vertical */
     right: 20px; /* Ajusta la posición horizontal */
 }
-
 nav.otras ul li a {
     color: white;
     text-decoration: none;
     transition: color 0.3s ease; /* Agrega una transición suave al color del texto */
 }
-
 nav.otras ul li a:hover {
     color: rgb(32, 162, 95);
 }
-
 main {
     padding-top: 100px; /* Ajusta el espacio para el encabezado */
     margin-top: 80px; /* Ajusta el margen superior para evitar que el contenido sea tapado por el encabezado */
 }
-
 .container{
     margin-top: 60px;
 }
-
 .imagenFondo {
     position: fixed;
     top: 0;
@@ -125,7 +100,6 @@ main {
     background-position: center;
     z-index: -1;
 }
-
 .seccionDeportes {
     font-family: "Quicksand", sans-serif;
     font-weight: 300;
@@ -137,7 +111,6 @@ main {
     z-index: 0;
     margin-top: 120px;
 }
-/* Estilos de las reservas */
 .listaDeportes {
     display: flex;
     flex-wrap: wrap;
@@ -148,25 +121,21 @@ main {
     padding-top: 80px;
     color: aliceblue;
 }
-
 .listaDeportes a {
     margin-right: 50px;
     text-decoration: none;
     transition: transform 0.2s ease;
     color: aliceblue; /* Asegura que el color de los enlaces sea visible */
 }
-
 .listaDeportes img {
     height: 60px;
     width: auto;
     vertical-align: middle;
     filter: invert(1);
 }
-
 .listaDeportes a:hover {
     transform: scale(1.1);
 }
-
 footer {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
@@ -178,48 +147,38 @@ footer {
     z-index: 999;
     max-height: 130px;
 }
-
 footer iframe {
     padding-bottom: 10px;
 }
 
 /* Media queries para diferentes tamaños de pantalla */
 @media screen and (max-height: 768px) {
-    /* Estilos para pantallas más pequeñas en altura */
     header {
         max-height: 10%; /* Ajusta la altura del encabezado */
     }
-
     header img {
         max-width: 80px; /* Ajusta el tamaño máximo del logo */
     }
-
     header .material-symbols-outlined {
         font-size: 24px; /* Reduce más el tamaño del icono en el encabezado */
         margin-top: 5px; /* Ajusta más el margen superior del icono */
     }
-
     .tituloHeader {
         font-size: 20px;
     }
 }
 
-
 @media screen and (max-height: 576px) {
-    /* Estilos para pantallas aún más pequeñas en altura */
     header {
         max-height: 8%; /* Ajusta la altura del encabezado */
     }
-
     header img {
         max-width: 60px; /* Ajusta el tamaño máximo del logo */
     }
-
     header .material-symbols-outlined {
         font-size: 20px; /* Reduce más el tamaño del icono en el encabezado */
         margin-top: 5px; /* Ajusta más el margen superior del icono */
     }
-
     .tituloHeader {
         font-size: 15px;
     }
