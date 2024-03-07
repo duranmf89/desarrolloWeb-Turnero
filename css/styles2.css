@@ -1,22 +1,22 @@
 /* Importar Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
-/* Estilos generales */
 * {
     box-sizing: border-box; 
 }
 
+/* Estilos generales */
 body {
     margin: 0;
     padding: 0;
-    font-family: "Quicksand", sans-serif; /* Añade una fuente predeterminada */
+    font-family: "Quicksand", sans-serif;
 }
 
 /* Estilos del encabezado */
 header {
-    display: flex; /* Usar flexbox para alinear elementos */
-    justify-content: space-between; /* Espacio entre los elementos del encabezado */
-    align-items: center; /* Centrar verticalmente los elementos */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #1E1E1E;
     color: white;
     padding: 10px 20px;
@@ -28,25 +28,13 @@ header {
     max-height: 130px;
 }
 
-.avatar {
-    width: 60px; /* Tamaño del ícono */
-    height: auto; /* Permite que la altura se ajuste automáticamente */
-    filter: invert(1); /* Invierte el color del ícono a blanco */
-    margin-bottom: 30px;
-}
-
 header img {
-    max-width: 130px; /* Ajusta el tamaño máximo del logo */
-    vertical-align: middle;
+    max-width: 130px;
 }
 
 nav.otras {
-    margin-left: auto; /* Ajusta el margen izquierdo del menú de navegación */
+    margin-left: auto;
     margin-right: 80px;
-}
-
-nav{
-    align-self: flex-end;
 }
 
 nav ul {
@@ -62,16 +50,16 @@ nav ul li {
 }
 
 nav ul li:first-child {
-    margin-left: 0; /* Elimina el margen izquierdo del primer elemento */
+    margin-left: 0;
 }
 
-nav ul li a {
+nav ul li a, .nav.otras ul li a {
     color: white;
     text-decoration: none;
-    transition: color 0.3s ease; /* Agrega una transición suave al color del texto */
+    transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
+nav ul li a:hover, .nav.otras ul li a:hover {
     color: rgb(32, 162, 95);
 }
 
@@ -82,39 +70,32 @@ nav ul li a:hover {
 }
 
 header .material-symbols-outlined {
-    font-size: 30px; /* Reduce el tamaño del icono en el encabezado */
+    font-size: 30px;
     cursor: pointer;
     filter: invert(1);
-    position: absolute; /* Mueve el icono a una posición absoluta */
-    top: 10px; /* Ajusta la posición vertical */
-    right: 20px; /* Ajusta la posición horizontal */
-}
-
-nav.otras ul li a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s ease; /* Agrega una transición suave al color del texto */
-}
-
-nav.otras ul li a:hover {
-    color: rgb(32, 162, 95);
+    position: absolute;
+    top: 10px;
+    right: 20px;
 }
 
 main {
-    padding-top: 100px; /* Ajusta el espacio para el encabezado */
-    margin-top: 80px; /* Ajusta el margen superior para evitar que el contenido sea tapado por el encabezado */
+    padding-top: 100px;
+    margin-top: 80px;
 }
 
-.container{
+.container {
     margin-top: 60px;
 }
 
-.imagenFondo {
+.imagenFondo, .seccionDeportes {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+.imagenFondo {
     background-image: url('../img/FONDO.jpg');
     background-size: cover;
     background-position: center;
@@ -124,11 +105,6 @@ main {
 .seccionDeportes {
     font-family: "Quicksand", sans-serif;
     font-weight: 300;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
     z-index: 0;
     margin-top: 120px;
 }
@@ -148,7 +124,7 @@ main {
     margin-right: 50px;
     text-decoration: none;
     transition: transform 0.2s ease;
-    color: aliceblue; /* Asegura que el color de los enlaces sea visible */
+    color: aliceblue;
 }
 
 .listaDeportes img {
@@ -180,15 +156,15 @@ footer iframe {
 
 /* Media queries para diferentes tamaños de pantalla */
 @media screen and (max-height: 768px) {
-    header {
-        max-height: 10%; /* Ajusta la altura del encabezado */
+    header, header img {
+        max-height: 10%;
     }
     header img {
-        max-width: 80px; /* Ajusta el tamaño máximo del logo */
+        max-width: 80px;
     }
     header .material-symbols-outlined {
-        font-size: 24px; /* Reduce más el tamaño del icono en el encabezado */
-        margin-top: 5px; /* Ajusta más el margen superior del icono */
+        font-size: 24px;
+        margin-top: 5px;
     }
     .tituloHeader {
         font-size: 20px;
@@ -196,15 +172,15 @@ footer iframe {
 }
 
 @media screen and (max-height: 576px) {
-    header {
-        max-height: 8%; /* Ajusta la altura del encabezado */
+    header, header img {
+        max-height: 8%;
     }
     header img {
-        max-width: 60px; /* Ajusta el tamaño máximo del logo */
+        max-width: 60px;
     }
     header .material-symbols-outlined {
-        font-size: 20px; /* Reduce más el tamaño del icono en el encabezado */
-        margin-top: 5px; /* Ajusta más el margen superior del icono */
+        font-size: 20px;
+        margin-top: 5px;
     }
     .tituloHeader {
         font-size: 15px;
