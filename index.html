@@ -11,47 +11,63 @@
 </head>
 <body>
     <header>
-        <img src="./img/logoCanchita.svg" alt="logo del proyecto" width="150px">
-        <h1 class="tituloHeader">Reservar es mas simple</h1>
-        <nav class="otras">
-            <ul>
-                <li>Eventos</li>
-                <li>Precios</li>
-                <li>Reservas</li>
-                <li><a href="./pages/nosotros.html">Nosotros</a></li>
-                <li><a href="./pages/registro.html">Registrate</a></li>
+        <div class="dropdown d-md-none">
+            <button class="btn"  style="background-color: transparent !important; border: none !important;" type="button" id="dropdown-1" data-bs-toggle="dropdown">
+                <img class="menuHamburguesa" src="./assets/img/icons/menuIcon.svg" alt="menu hambuerguesa" width="50px">
+            </button>
+            <ul class="dropdown-menu bg-secondary">
+                <li><a href="./pages/registro.html" class="dropdown-item text-white">Regístrate</a></li>
+                <li><a href="./pages/reservas.html" class="dropdown-item text-white">Reservas</a></li>
+                <li><a href="./pages/precios.html" class="dropdown-item text-white">Precios</a></li>
+                <li><a href="./pages/eventos.html" class="dropdown-item text-white">Eventos</a></li>
+                <li><a href="./pages/nosotros.html" class="dropdown-item text-white">Nosotros</a></li>
             </ul>
-        </nav>
-        <a href="#"><img class="avatar" src="./img/icons/avatar.svg" alt="iconoAvatar"></a>
+        </div>
+        <a href="./index.html">
+            <img src="./assets/img/logoCanchita.svg" alt="logo del proyecto" class="row d-flex justify-content-center" width="180px" height="auto">
+        </a>        
+            <h1 class="tituloHeader fs-3 d-md-block d-none">Reservar es mas simple</h1>
+            <nav class="otras d-md-block d-none">
+                <ul>
+                    <li><a href="./pages/eventos.html">Eventos</a></li>
+                    <li><a href="./pages/precios.html">Precios</a></li>
+                    <li><a href="./pages/reservas.html">Reservas</a></li>
+                    <li><a href="./pages/nosotros.html">Nosotros</a></li>
+                    <li><a href="./pages/registro.html">Registrate</a></li>
+                </ul>
+            </nav>
+        <div>
+        <a href="./index.html"><img class="avatar" src="./assets/img/icons/avatar.svg" alt="iconoAvatar"></a>
+        </div>
     </header>
     <main>
         <div class="imagenFondo"></div>
         <section class="seccionDeportes">
             <div class="listaDeportes">
-                <a href="./pages/turnosFutbol.html"><img src="./img/FUTBOL.svg" alt="iconoFutbol"> Futbol</a>
-                <a href="./pages/turnosTenis.html"><img src="./img/TENIS.svg" alt="iconoTenis"> Tenis</a>
-                <a href="./pages/turnosPaddle.html"><img src="./img/PADDLE.svg" alt="iconoPaddle"> Paddle</a>
-                <a href="./pages/turnosSquash.html"><img src="./img/SQUASH.svg" alt="iconoSquash"> Squash</a>
+                <a href="./pages/turnosFutbol.html"><img src="./assets/img/FUTBOL.svg" alt="iconoFutbol"> Futbol</a>
+                <a href="./pages/turnosTenis.html"><img src="./assets/img/TENIS.svg" alt="iconoTenis"> Tenis</a>
+                <a href="./pages/turnosPaddle.html"><img src="./assets/img/PADDLE.svg" alt="iconoPaddle"> Paddle</a>
+                <a href="./pages/turnosSquash.html"><img src="./assets/img/SQUASH.svg" alt="iconoSquash"> Squash</a>
             </div>
-            <div class="container">
+            <div class="container d-md-block d-none">
             <div class="row d-flex justify-content-center">
                 <div class="col-6">
                     <div class="carousel slide" id="mi-carousel" data-bs-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active" data-bs-interval="3000">
-                                <img  class="img-fluid w-80 h-80 d-block mx-auto"  src="./img/paddle2.png" alt="">
+                                <img  class="img-fluid w-80 h-80 d-block mx-auto"  src="./assets/img/paddle2.png" alt="">
                             </div>
                             <div class="carousel-item" data-bs-interval="3000">
                                 <div class="carousel-caption">
                                     <h5>Torneo de Mujeres 2023</h5>
                                 </div>
-                                <img class="img-fluid w-80 h-80 d-block mx-auto" src="./img/torneoMujeres.png" alt=""> 
+                                <img class="img-fluid w-80 h-80 d-block mx-auto" src="./assets/img/torneoMujeres.png" alt=""> 
                             </div>
                             <div class="carousel-item" data-bs-interval="3000">
-                                <img class="img-fluid w-80 h-80 d-block mx-auto" src="./img/futbol.png" alt="">
+                                <img class="img-fluid w-80 h-80 d-block mx-auto" src="./assets/img/futbol.png" alt="">
                             </div>
                             <div class="carousel-item" data-bs-interval="3000">
-                                <img class="img-fluid w-80 h-80 d-block mx-auto" src="./img/paddle.png" alt="">
+                                <img class="img-fluid w-80 h-80 d-block mx-auto" src="./assets/img/paddle.png" alt="">
                             </div>
                         </div>
                         <!--Controles-->
@@ -80,14 +96,25 @@
     <footer>
         <div class="footer-container">
             <div class="row align-items-center">
-                <div class="col-md-4">
+                <div class="col-md-4 d-md-block d-none">
                     <p>Contacto: +549-35169348553</p>
                     <p>Dirección: Country Las Medusas</p>
                 </div>
                 <div class="col-md-4 text-center">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.7977576390463!2d-64.22907862421248!3d-31.39213959507988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943298c4664eccfb%3A0x87b2be8092209659!2zT1BFUkEgUEFSSyDigJMg4bSbypzhtIcgyoDhtI_Kj-G0gMqfIMqfyarqnLDhtIcgfCBHcnVwbyBQcm9hY28gRmlkdWNpYXJpYSBTLkEu!5e0!3m2!1ses!2sar!4v1708013646399!5m2!1ses!2sar" width="300" height="90" style="border:0; margin-bottom: 20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe class="mapaIframe d-md-block d-none" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.7977576390463!2d-64.22907862421248!3d-31.39213959507988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943298c4664eccfb%3A0x87b2be8092209659!2zT1BFUkEgUEFSSyDigJMg4bSbypzhtIcgyoDhtI_Kj-G0gMqfIMqfyarqnLDhtIcgfCBHcnVwbyBQcm9hY28gRmlkdWNpYXJpYSBTLkEu!5e0!3m2!1ses!2sar!4v1708013646399!5m2!1ses!2sar"></iframe>
+                </div> 
+                <div class="col-md-4 d-md-block d-none">
+                    <p>©2024 by Canchita.</p>
                 </div>
             </div>
+        </div>  
+        <div class="iconos d-flex justify-content-around">
+            <a href="https://www.google.com/maps/place/OPERA+PARK+%E2%80%93+%E1%B4%9B%CA%9C%E1%B4%87+%CA%80%E1%B4%8F%CA%8F%E1%B4%80%CA%9F+%CA%9F%C9%AA%EA%9C%B0%E1%B4%87+%7C+Grupo+Proaco+Fiduciaria+S.A./@-31.392144,-64.226504,14z/data=!4m6!3m5!1s0x943298c4664eccfb:0x87b2be8092209659!8m2!3d-31.3921442!4d-64.2265037!16s%2Fg%2F11c55v8s93?hl=es&entry=ttu" target="_blank">
+            <img src="./assets/img/icons/googleMapsIcon.svg" alt="logo google maps" width="50px" height="auto" class="opacity-50"> 
+            </a>
+                
+            <img src="./assets/img/icons/instagramIcon.svg" alt="logo de instagram" width="50px" height="auto" class="opacity-50"> 
+            <img src="./assets/img/icons/whatsappIcon.svg" alt="logo del proyecto" width="50px" height="auto" class="opacity-50">
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
