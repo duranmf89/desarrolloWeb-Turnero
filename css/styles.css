@@ -36,7 +36,8 @@ h1 {
     width: 60px; /* Tamaño del ícono */
     height: auto; /* Permite que la altura se ajuste automáticamente */
     filter: invert(1); /* Invierte el color del ícono a blanco */
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+    
 }
 
 .menuHamburguesa{
@@ -193,10 +194,10 @@ footer .mapaIframe {
 /* Media queries para diferentes tamaños de pantalla */
 @media screen and (max-height: 768px) {
     header {
-        max-height: 10%; /* Ajusta la altura del encabezado */
+        max-height: 15%; /* Ajusta la altura del encabezado */
     }
     header img {
-        max-width: 80px; /* Ajusta el tamaño máximo del logo */
+        max-width: 150px; /* Ajusta el tamaño máximo del logo */
     }
     header .material-symbols-outlined {
         font-size: 24px; /* Reduce más el tamaño del icono en el encabezado */
@@ -209,10 +210,10 @@ footer .mapaIframe {
 
 @media screen and (max-height: 576px) {
     header {
-        max-height: 8%; /* Ajusta la altura del encabezado */
+        max-height: 12%; /* Ajusta la altura del encabezado */
     }
     header img {
-        max-width: 60px; /* Ajusta el tamaño máximo del logo */
+        max-width: 130px; /* Ajusta el tamaño máximo del logo */
     }
     header .material-symbols-outlined {
         font-size: 20px; /* Reduce más el tamaño del icono en el encabezado */
