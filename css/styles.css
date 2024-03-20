@@ -1,22 +1,21 @@
-/* Importar Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 
-/* Estilos generales */
 * {
-    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     margin: 0;
     padding: 0;
-    font-family: "Quicksand", sans-serif; /* Añade una fuente predeterminada */
+    font-family: "Quicksand", sans-serif;
 }
 
-/* Estilos del encabezado */
 header {
-    display: flex; /* Usar flexbox para alinear elementos */
-    justify-content: space-between; 
-    align-items: center; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #1E1E1E;
     color: white;
     padding: 10px 20px;
@@ -28,37 +27,33 @@ header {
     max-height: 130px;
 }
 
-h1 {
-    font-size: 6vh;
-}
 
-.avatar {
-    width: 60px; /* Tamaño del ícono */
-    height: auto; /* Permite que la altura se ajuste automáticamente */
-    filter: invert(1); /* Invierte el color del ícono a blanco */
+header .avatar {
+    width: 45px;
+    height: auto;
+    filter: invert(1);
     margin-bottom: 10px;
-    
 }
 
-.menuHamburguesa{
+header .menuHamburguesa {
     filter: invert(1);
 }
 
 header img {
-    max-width: 200px; /* Ajusta el tamaño máximo del logo */
+    max-width: 180px;
     vertical-align: middle;
 }
 
-nav.otras {
-    margin-left: auto; /* Ajusta el margen izquierdo del menú de navegación */
+header nav.otras {
+    margin-left: auto;
     margin-right: 70px;
 }
 
-nav{
+header nav {
     align-self: flex-end;
 }
 
-nav ul {
+header nav ul {
     list-style-type: none;
     display: flex;
     justify-content: flex-end;
@@ -66,25 +61,25 @@ nav ul {
     padding: 0;
 }
 
-nav ul li {
+header nav ul li {
     margin-left: 60px;
 }
 
-nav ul li:first-child {
-    margin-left: 0; /* Elimina el margen izquierdo del primer elemento */
+header nav ul li:first-child {
+    margin-left: 0;
 }
 
-nav ul li a {
+header nav ul li a {
     color: white;
     text-decoration: none;
-    transition: color 0.3s ease; /* Agrega una transición suave al color del texto */
+    transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
+header nav ul li a:hover {
     color: rgb(32, 162, 95);
 }
 
-.tituloHeader {
+header .tituloHeader {
     font-size: 30px;
     font-weight: 300;
     margin-left: 100px;
@@ -92,18 +87,18 @@ nav ul li a:hover {
 }
 
 header .material-symbols-outlined {
-    font-size: 30px; /* Reduce el tamaño del icono en el encabezado */
+    font-size: 30px;
     cursor: pointer;
     filter: invert(1);
-    position: absolute; /* Mueve el icono a una posición absoluta */
-    top: 10px; /* Ajusta la posición vertical */
-    right: 20px; /* Ajusta la posición horizontal */
+    position: absolute;
+    top: 10px;
+    right: 20px;
 }
 
 nav.otras ul li a {
     color: white;
     text-decoration: none;
-    transition: color 0.3s ease; /* Agrega una transición suave al color del texto */
+    transition: color 0.3s ease;
 }
 
 nav.otras ul li a:hover {
@@ -111,11 +106,15 @@ nav.otras ul li a:hover {
 }
 
 main {
-    padding-top: 100px; /* Ajusta el espacio para el encabezado */
-    margin-top: 80px; /* Ajusta el margen superior para evitar que el contenido sea tapado por el encabezado */
+    padding-top: 100px;
+    margin-top: 80px;
 }
 
-.container{
+.form-control {
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
+.container {
     margin-top: 60px;
 }
 
@@ -125,7 +124,7 @@ main {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../assets/img/FONDO.jpg');
+    background-image: url("../assets/img/FONDO.jpg");
     background-size: cover;
     background-position: center;
     z-index: -1;
@@ -140,14 +139,14 @@ main {
     width: 100%;
     height: 100%;
     z-index: 0;
-    margin-top: 120px;
+    margin-top: 130px;
 }
 
 .listaDeportes {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    text-align: left;
     font-size: 50px;
     font-weight: 400;
     padding-top: 80px;
@@ -156,13 +155,15 @@ main {
 
 .listaDeportes a {
     margin-right: 50px;
+    margin-top: 10px;
     text-decoration: none;
     transition: transform 0.2s ease;
-    color: aliceblue; /* Asegura que el color de los enlaces sea visible */
+    color: aliceblue;
+    text-align: left;
 }
 
-.listaDeportes img {
-    height: 60px;
+.listaDeportes a img {
+    height: 70px;
     width: auto;
     vertical-align: middle;
     filter: invert(1);
@@ -174,7 +175,7 @@ main {
 
 footer {
     background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
+    padding-top: 10px;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -184,42 +185,11 @@ footer {
     max-height: 130px;
 }
 
-footer .mapaIframe {
-    width: 100%; /* Ajustar el ancho del iframe al contenedor */
-    height: 90px; /* Altura fija del iframe */
-    margin-bottom: 20px; /* Espacio entre el iframe y otros elementos */
-    border: 0; /* Eliminar el borde del iframe */
+.mapaIframe {
+    width: 65%;
+    height: 90px;
+    margin-bottom: 20px;
+    border: 0;
 }
 
-/* Media queries para diferentes tamaños de pantalla */
-@media screen and (max-height: 768px) {
-    header {
-        max-height: 15%; /* Ajusta la altura del encabezado */
-    }
-    header img {
-        max-width: 150px; /* Ajusta el tamaño máximo del logo */
-    }
-    header .material-symbols-outlined {
-        font-size: 24px; /* Reduce más el tamaño del icono en el encabezado */
-        margin-top: 5px; /* Ajusta más el margen superior del icono */
-    }
-    /* .tituloHeader{
-        display: none;
-    } */
-}
-
-@media screen and (max-height: 576px) {
-    header {
-        max-height: 12%; /* Ajusta la altura del encabezado */
-    }
-    header img {
-        max-width: 130px; /* Ajusta el tamaño máximo del logo */
-    }
-    header .material-symbols-outlined {
-        font-size: 20px; /* Reduce más el tamaño del icono en el encabezado */
-        margin-top: 5px; /* Ajusta más el margen superior del icono */
-    }
-    /* .tituloHeader{
-        display: none;
-    } */
-}
+/*# sourceMappingURL=main.css.map */
