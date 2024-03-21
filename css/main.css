@@ -207,6 +207,9 @@ main {
   }
 }
 @media screen and (max-width: 576px) {
+  header {
+    height: 110px;
+  }
   header .avatar {
     width: 45px;
   }
