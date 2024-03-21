@@ -116,21 +116,22 @@ footer {
   width: 100%;
   text-align: center;
   z-index: 999;
-  max-height: 130px;
+  max-height: 110px;
   font-weight: 200;
+  margin-bottom: 20px;
 }
 
 .mapaIframe {
-  width: 65%;
-  height: 90px;
+  width: 55%;
+  height: 70px;
   margin-bottom: 20px;
   border: 0;
 }
 
 /*Estilos del main*/
 main {
-  padding-top: 100px;
-  margin-top: 80px;
+  padding-top: 150px;
+  padding-bottom: 130px;
 }
 
 .form-control {
@@ -160,14 +161,13 @@ main {
 }
 
 .seccionDeportes {
-  position: absolute;
-  vertical-align: middle;
-  top: 0;
-  left: 0;
+  /* position: absolute; */
+  /* vertical-align: middle; */
+  /* top: 0; */
+  /* left: 0; */
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   z-index: 0;
-  padding-top: 80px;
 }
 
 .listaDeportes {
@@ -177,7 +177,6 @@ main {
   width: 100%;
   font-size: 50px;
   font-weight: 200;
-  padding-top: 80px;
   color: aliceblue;
 }
 .listaDeportes a {
@@ -217,7 +216,6 @@ main {
   .listaDeportes {
     font-size: 55px;
     font-weight: 100;
-    padding-top: 60px;
   }
   .listaDeportes a {
     margin-right: 45px;

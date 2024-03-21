@@ -1,8 +1,8 @@
 // Estilos del main
 /*Estilos del main*/
 main {
-    padding-top: 100px;
-    margin-top: 80px;
+    padding-top: 150px; 
+    padding-bottom: 130px; 
 }
 
 .form-control {
@@ -31,16 +31,18 @@ main {
     z-index: -1;
 }
 
+
 .seccionDeportes {
-    position: absolute;
-    vertical-align: middle;
-    top: 0;
-    left: 0;
+    /* position: absolute; */ 
+    /* vertical-align: middle; */ 
+    /* top: 0; */ 
+    /* left: 0; */ 
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     z-index: 0;
-    padding-top: 80px;
+    // padding-top: 160px;
 }
+
 
 .listaDeportes {
     display: flex;
@@ -49,7 +51,6 @@ main {
     width: 100%;
     font-size: 50px;
     font-weight: 200;
-    padding-top: 80px;
     color:$listaDeportes-color;
 
     a {
