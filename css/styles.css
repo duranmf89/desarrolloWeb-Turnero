@@ -1,3 +1,4 @@
+/*Reset*/
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 
 * {
@@ -6,19 +7,20 @@
     box-sizing: border-box;
 }
 
+/*Estilos globales*/
 body {
     margin: 0;
     padding: 0;
-    font-family: "Quicksand", sans-serif;
 }
 
+/*Estilos encabezado*/
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #1E1E1E;
     color: white;
-    padding: 10px 20px;
+    padding: 5px 20px;
     position: fixed;
     top: 0;
     left: 0;
@@ -27,16 +29,23 @@ header {
     max-height: 130px;
 }
 
+header .btn {
+    background-color: transparent;
+    border: none;
+}
 
 header .avatar {
     width: 45px;
     height: auto;
     filter: invert(1);
     margin-bottom: 10px;
+    margin-right: 10px;
 }
 
 header .menuHamburguesa {
     filter: invert(1);
+    width: 30px;
+    height: auto;
 }
 
 header img {
@@ -63,6 +72,7 @@ header nav ul {
 
 header nav ul li {
     margin-left: 60px;
+    font-weight: 200;
 }
 
 header nav ul li:first-child {
@@ -79,14 +89,14 @@ header nav ul li a:hover {
     color: rgb(32, 162, 95);
 }
 
-header .tituloHeader {
+.tituloHeader {
     font-size: 30px;
-    font-weight: 300;
+    font-weight: 200;
     margin-left: 100px;
     margin-right: 40px;
 }
 
-header .material-symbols-outlined {
+.material-symbols-outlined {
     font-size: 30px;
     cursor: pointer;
     filter: invert(1);
@@ -105,6 +115,28 @@ nav.otras ul li a:hover {
     color: rgb(32, 162, 95);
 }
 
+/*Estilos del footer*/
+footer {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding-top: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 999;
+    max-height: 130px;
+    font-weight: 200;
+}
+
+.mapaIframe {
+    width: 65%;
+    height: 90px;
+    margin-bottom: 20px;
+    border: 0;
+}
+
+/*Estilos del main*/
 main {
     padding-top: 100px;
     margin-top: 80px;
@@ -112,6 +144,12 @@ main {
 
 .form-control {
     background-color: rgba(255, 255, 255, 0.85);
+    font-weight: 200;
+}
+
+.titulo-registro {
+    font-size: 45px;
+    font-weight: 200;
 }
 
 .container {
@@ -131,9 +169,8 @@ main {
 }
 
 .seccionDeportes {
-    font-family: "Quicksand", sans-serif;
-    font-weight: 300;
     position: absolute;
+    vertical-align: middle;
     top: 0;
     left: 0;
     width: 100%;
@@ -142,54 +179,18 @@ main {
     margin-top: 130px;
 }
 
-.listaDeportes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: left;
-    font-size: 50px;
-    font-weight: 400;
-    padding-top: 80px;
-    color: aliceblue;
-}
-
 .listaDeportes a {
-    margin-right: 50px;
-    margin-top: 10px;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-top: 30px;
     text-decoration: none;
     transition: transform 0.2s ease;
     color: aliceblue;
-    text-align: left;
-}
-
-.listaDeportes a img {
-    height: 70px;
-    width: auto;
-    vertical-align: middle;
-    filter: invert(1);
 }
 
 .listaDeportes a:hover {
     transform: scale(1.1);
 }
 
-footer {
-    background-color: rgba(255, 255, 255, 0.8);
-    padding-top: 10px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    z-index: 999;
-    max-height: 130px;
-}
 
-.mapaIframe {
-    width: 65%;
-    height: 90px;
-    margin-bottom: 20px;
-    border: 0;
-}
-
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=styles.css.map */

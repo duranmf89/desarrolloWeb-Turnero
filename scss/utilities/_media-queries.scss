@@ -1,0 +1,42 @@
+@media screen and (max-width: 768px) {
+
+    header img {
+        max-width: 160px;
+    }
+
+    .listaDeportes {
+        font-size: 55px;
+
+        a img {
+            height: 45px;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    header {
+        .avatar {
+            width: 45px;
+        }
+
+        img {
+            max-width: 140px;
+        }
+    }
+
+    .listaDeportes {
+        font-size: 55px;
+        font-weight: 100;
+        padding-top: 150px;
+
+        a {
+            margin-right: 45px;
+
+            img {
+                height: 60px;
+
+            }
+        }
+    }
+}

@@ -9,8 +9,8 @@ footer {
     width: 100%;
     text-align: center;
     z-index: 999;
-    max-height: 130px;
-    font-family: "Quicksand", sans-serif;
+    max-height: $footer-max-height;
+    font-weight: 200;
 }
 
 .mapaIframe {
