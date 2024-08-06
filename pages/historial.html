@@ -45,27 +45,14 @@
         </div>
     </header>
     <main>
-        <div class="imagenFondo"></div>
-            <div class="formulario d-flex justify-content-center mt-0">
-                <div class="row col-10 col-md-6 col-lg-4">
-                    <form action="" class="text-center">
-                        <div class="mb-3">
-                            <h1 class="titulo-registro mb-3 text-white">Regístrate</h1>
-                            <input type="text" class="form-control mb-3" id="nombre" placeholder="Nombre">
-                            <input type="text" class="form-control mb-3" id="apellido" placeholder="Apellido"> 
-                            <input type="text" class="form-control mb-3" id="dni" placeholder="DNI">
-                            <select class="form-select mb-3" id="cont-provincias"></select>
-                            <input type="email" class="form-control mb-3" id="correo" placeholder="correo@correo.com">
-                        </div>
-                        <div class="form-check d-flex justify-content-center mb-3 ">
-                            <input type="checkbox" name="terminos" id="terminos" class="form-check-input"required>
-                            <label for="terminos" class="form-check-label text-white mx-2">Acepto los terminos y condiciones.</label>
-                        </div>
-                        <button type="submit" class="col-4 mx-auto btn btn-secondary  text-align-center">Enviar</button>
-                    </form>
-                </div>
+        <div class="imagenFondo"></div>    
+        <div class="container mt-4 opacity-70">
+            <h1 class="text-center text-white">Historial de Reservas</h1>
+            <div id="historialReservasContainer" class="mt-4">
+                <!-- La tabla se generará aquí -->
             </div>
         </div>
+        
     </main>
     <footer>
         <div class="footer-container">
@@ -95,8 +82,7 @@
             </div>
         </div>
     </footer>
-    <script src="../data/db.js"></script>
-    <script src="./registro.js"></script>
+    <script src="./historial.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">

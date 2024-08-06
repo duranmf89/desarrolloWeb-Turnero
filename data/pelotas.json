@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "nombre": "Pelotas",
+        "marca": "Dunlop",
+        "precio": 9000,
+        "imagen": "pelota-a.jpg"
+    },
+    {
+        "id": 2,
+        "nombre": "Pelotas",
+        "marca": "Penn",
+        "precio": 10500,
+        "imagen": "pelota-b.jpg"
+    },
+    {
+        "id": 3,
+        "nombre": "Pelotas",
+        "marca": "Slazenger",
+        "precio": 12000,
+        "imagen": "pelota-c.jpg"
+    }
+]

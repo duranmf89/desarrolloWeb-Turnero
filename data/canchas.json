@@ -1,0 +1,6 @@
+[
+    { "id": 1, "superficie": "Polvo de ladrillo", "precio": 12000 },
+    { "id": 2, "superficie": "Pasto sintetico", "precio": 18000 },
+    { "id": 3, "superficie": "Carpeta", "precio": 10000 },
+    { "id": 4, "superficie": "Cemento", "precio": 8000 }
+]
