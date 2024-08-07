@@ -348,18 +348,29 @@ const confirmarReserva = () => {
     const selectCancha = document.getElementById('cancha');
     const opcionCancha = selectCancha.options[selectCancha.selectedIndex].text;
     const horario = document.getElementById('horario').value;
+    
+    // Obtener la fecha y hora actual
+    const now = new Date();
+    now.setHours(now.getHours()); 
+
+    // Formatear la fecha y hora en formato local (sin la 'Z')
+    const fechaHoraConfirmacion = now.toLocaleString('es-AR', { 
+        timeZone: 'America/Argentina/Buenos_Aires',
+        hour12: false // Usar formato de 24 horas
+    });
 
     const reserva = {
         fecha,
         opcionCancha,
-        horario
+        horario,
+        fechaHoraConfirmacion // Añadimos la fecha y hora de la confirmación ajustada
     };
 
     let historialReservas = JSON.parse(localStorage.getItem('historialReservas')) || [];
     historialReservas.push(reserva);
     localStorage.setItem('historialReservas', JSON.stringify(historialReservas));
 
-    // Mensaje de exito
+    // Mensaje de éxito
     Toastify({
         text: "Su reserva se ha realizado con éxito",
         duration: 4000,
@@ -371,6 +382,7 @@ const confirmarReserva = () => {
 
     resetReserva();
 };
+
 
 
 
