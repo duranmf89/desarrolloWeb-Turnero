@@ -163,7 +163,7 @@ const comprarProductos = (productos) => {
             <img src="../assets/img/${producto.imagen}" alt="${producto.nombre}">
             <p>Marca: ${producto.marca}</p>
             <p>Precio: $${producto.precio}</p>
-            <button class="btn fill">Comprar</button>
+            <button class="btn btn-success btn-comprar w-100 mb-2">Comprar</button>
         `;
 
         const botonComprar = card.querySelector('button');
@@ -178,10 +178,10 @@ const comprarProductos = (productos) => {
 
             const botonConfirmar = document.createElement('button');
             botonConfirmar.textContent = 'Ok';
-            botonConfirmar.classList.add('fill', 'confirmar-btn');
+            botonConfirmar.classList.add('btn', 'btn-primary', 'w-100', 'mt-2', 'mb-2');
 
             const botonCancelar = document.createElement('button');
-            botonCancelar.classList.add('btn', 'fill');
+            botonCancelar.classList.add('btn', 'btn-secondary','w-100');
             botonCancelar.style.backgroundColor = 'red';
             botonCancelar.textContent = 'Cancelar';
             botonCancelar.style.display = 'none'
@@ -218,6 +218,10 @@ const comprarProductos = (productos) => {
         productosContainer.appendChild(card);
     });
 }
+
+
+
+
 
 
 const mostrarResumen = () => {
